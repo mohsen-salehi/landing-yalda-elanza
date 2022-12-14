@@ -1,0 +1,869 @@
+@import "font.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import "bootstrap.css";
+html, body {
+  background-image: linear-gradient(to bottom, #141c53, #333e8a);
+}
+
+input, select {
+  outline: none !important;
+  border: none;
+}
+
+.btn-accept {
+  background: #FF304E;
+}
+
+img {
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+}
+
+.main {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.main::-webkit-scrollbar {
+  width: 10px;
+  background: #1d724d;
+}
+.main::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #FF006A;
+  border-radius: 10px;
+}
+.main .hafez-book {
+  transform: translateX(117%) translateY(67px) rotate(-40deg);
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.img-hendevaneh {
+  position: absolute !important;
+  z-index: 0;
+}
+
+@media (max-width: 767px) {
+  .top-section {
+    width: 100%;
+    height: 30%;
+    background-image: url("../public/img/hendavaneh2.png");
+    background-size: 100%, 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 2;
+  }
+  .img1 {
+    right: -30%;
+    bottom: -10%;
+    transform: scale(0.3) rotate(-20deg) translateY(50px);
+    transform-origin: center;
+    opacity: 0.5;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img1 5s linear alternate infinite;
+  }
+  @keyframes img1 {
+    to {
+      transform: scale(0.3) rotate(-20deg) translateY(-50px);
+    }
+  }
+  .img2 {
+    left: -40%;
+    top: 30%;
+    transform: scale(0.2) rotate(150deg) translateY(50px);
+    transform-origin: center;
+    opacity: 0.5;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img2 5s linear alternate infinite;
+  }
+  @keyframes img2 {
+    to {
+      transform: scale(0.2) rotate(150deg) translateY(-50px);
+    }
+  }
+  .img3 {
+    right: -40%;
+    bottom: -10%;
+    transform: scale(0.2) rotate(0) translateY(50px);
+    transform-origin: center;
+    opacity: 0.5;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img3 5s linear alternate infinite;
+  }
+  @keyframes img3 {
+    to {
+      transform: scale(0.2) rotate(0) translateY(-50px);
+    }
+  }
+  .img4 {
+    right: -100%;
+    top: -30%;
+    transform: scale(0.1) rotate(0) translateY(50px);
+    transform-origin: center;
+    opacity: 0.2;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img4 5s linear alternate infinite;
+  }
+  @keyframes img4 {
+    to {
+      transform: scale(0.1) rotate(0) translateY(-50px);
+    }
+  }
+  .img5 {
+    left: -100%;
+    top: -30%;
+    transform: scale(0.1) rotate(0) translateY(50px);
+    transform-origin: center;
+    opacity: 0.5;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img5 5s linear alternate infinite;
+  }
+  @keyframes img5 {
+    to {
+      transform: scale(0.1) rotate(0) translateY(-50px);
+    }
+  }
+  .align {
+    clear: both;
+    width: 100%;
+    transform: scale(0.9);
+    text-align: center;
+  }
+  .book {
+    position: relative;
+    width: 160px;
+    height: 220px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 768px) {
+  .top-section {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../public/img/hendavaneh2.png");
+    background-size: 70%, 80%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 2;
+  }
+  .img1 {
+    right: 2%;
+    transform: scale(0.6) rotate(-20deg) translateY(50px);
+    transform-origin: center;
+    opacity: 0.5;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img1 5s linear alternate infinite;
+  }
+  @keyframes img1 {
+    to {
+      transform: scale(0.6) rotate(-20deg) translateY(-50px);
+    }
+  }
+  .img2 {
+    left: 0;
+    top: 0;
+    transform: scale(0.6) rotate(150deg) translateY(50px);
+    transform-origin: center;
+    opacity: 0.2;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img2 5s linear alternate infinite;
+  }
+  @keyframes img2 {
+    to {
+      transform: scale(0.6) rotate(150deg) translateY(-50px);
+    }
+  }
+  .img3 {
+    right: 0;
+    top: 30%;
+    transform: scale(0.2) rotate(0) translateY(50px);
+    opacity: 0.5;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img3 5s linear alternate infinite;
+  }
+  @keyframes img3 {
+    to {
+      transform: scale(0.2) rotate(0) translateY(-50px);
+    }
+  }
+  .img4 {
+    right: 0;
+    top: 10%;
+    transform: scale(0.1) rotate(0);
+    transform-origin: center;
+    opacity: 0.1;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img4 5s linear alternate infinite;
+  }
+  @keyframes img4 {
+    to {
+      transform: scale(0.1) rotate(45deg);
+    }
+  }
+  .img5 {
+    left: 0;
+    top: -30%;
+    transform: scale(0.1) rotate(0) translateY(80px);
+    transform-origin: center;
+    opacity: 0.5;
+    filter: drop-shadow(5px 5px 5px #69761a);
+    animation: img5 5s linear alternate infinite;
+  }
+  @keyframes img5 {
+    to {
+      transform: scale(0.1) rotate(45deg);
+    }
+  }
+  .barg {
+    position: absolute;
+    left: 5%;
+    z-index: -1;
+    opacity: 0.1;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.4);
+  }
+  .align {
+    transform: scale(1);
+    clear: both;
+    width: 100%;
+    text-align: center;
+  }
+  .book {
+    position: relative;
+    width: 160px;
+    height: 220px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    transform: translateY(-10%) scale(1.2);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 1025px) {
+  .book {
+    position: relative;
+    width: 160px;
+    height: 220px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    transform: translateY(-70%) scale(2);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 1200px) {
+  .top-section {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../public/img/hendavaneh2.png");
+    background-size: 70%, 80%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 2;
+  }
+}
+.component {
+  padding: 0;
+  margin: 0;
+  /* basic grid, only for this demo */
+  /*
+      2. background & color
+  */
+  /* HARDCOVER FRONT */
+  /* reverse */
+  /* HARDCOVER BACK */
+  /* reverse */
+  /* thickness of cover */
+  /* page */
+  /*
+      3. opening cover, back cover and pages
+  */
+  /*
+      4. position, transform & transition
+  */
+  /* HARDCOVER front */
+  /* HARDCOVER back */
+  /* thickness of cover */
+  /* HARDCOVER front */
+  /* thickness of cover */
+  /* BOOK SPINE */
+  /* thickness of book spine */
+  /*.page > li:nth-child(1) {*/
+  /*    -webkit-transition-duration: 0.6s;*/
+  /*    -moz-transition-duration: 0.6s;*/
+  /*    transition-duration: 0.6s;*/
+  /*}*/
+  /*
+      5. events
+  */
+  /* Media Queries */
+}
+.component ::before,
+.component ::after {
+  content: "";
+}
+.component ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.component a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+.component .align > li {
+  width: 500px;
+  min-height: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+.component .hardcover_front li:first-child {
+  background-color: #eee;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.component .hardcover_front li:last-child {
+  background: #fffbec;
+}
+.component .hardcover_back li:first-child {
+  background: #fffbec;
+}
+.component .hardcover_back li:last-child {
+  background: #fffbec;
+}
+.component .book_spine li:first-child {
+  background: #eee;
+}
+.component .book_spine li:last-child {
+  background: #333;
+}
+.component .hardcover_front li:first-child:after,
+.component .hardcover_front li:first-child:before,
+.component .hardcover_front li:last-child:after,
+.component .hardcover_front li:last-child:before,
+.component .hardcover_back li:first-child:after,
+.component .hardcover_back li:first-child:before,
+.component .hardcover_back li:last-child:after,
+.component .hardcover_back li:last-child:before,
+.component .book_spine li:first-child:after,
+.component .book_spine li:first-child:before,
+.component .book_spine li:last-child:after,
+.component .book_spine li:last-child:before {
+  background: #999;
+}
+.component .page > li {
+  background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+  background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+  background: -ms-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+  background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+  box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+  border-radius: 0 25px 25px 0;
+  overflow: hidden;
+}
+.component .hardcover_front {
+  -webkit-transform: rotateY(-34deg) translateZ(8px);
+  -moz-transform: rotateY(-34deg) translateZ(8px);
+  transform: rotateY(-34deg) translateZ(8px);
+  z-index: 100;
+}
+.component .hardcover_back {
+  -webkit-transform: rotateY(-15deg) translateZ(-8px);
+  -moz-transform: rotateY(-15deg) translateZ(-8px);
+  transform: rotateY(-15deg) translateZ(-8px);
+}
+.component .page li:nth-child(1) {
+  -webkit-transform: rotateY(-28deg);
+  -moz-transform: rotateY(-28deg);
+  transform: rotateY(-28deg);
+}
+.component .page li:nth-child(2) {
+  -webkit-transform: rotateY(-30deg);
+  -moz-transform: rotateY(-30deg);
+  transform: rotateY(-30deg);
+}
+.component .page li:nth-child(3) {
+  -webkit-transform: rotateY(-32deg);
+  -moz-transform: rotateY(-32deg);
+  transform: rotateY(-32deg);
+}
+.component .page li:nth-child(4) {
+  -webkit-transform: rotateY(-34deg);
+  -moz-transform: rotateY(-34deg);
+  transform: rotateY(-34deg);
+}
+.component .page li:nth-child(5) {
+  -webkit-transform: rotateY(-36deg);
+  -moz-transform: rotateY(-36deg);
+  transform: rotateY(-36deg);
+}
+.component .page li:nth-child(6) {
+  -webkit-transform: rotateY(-36deg);
+  -moz-transform: rotateY(-36deg);
+  transform: rotateY(-36deg);
+}
+.component .page li:nth-child(7) {
+  -webkit-transform: rotateY(-36deg);
+  -moz-transform: rotateY(-36deg);
+  transform: rotateY(-36deg);
+}
+.component .page li:nth-child(8) {
+  -webkit-transform: rotateY(-36deg);
+  -moz-transform: rotateY(-36deg);
+  transform: rotateY(-36deg);
+}
+.component .page li:nth-child(9) {
+  -webkit-transform: rotateY(-36deg);
+  -moz-transform: rotateY(-36deg);
+  transform: rotateY(-36deg);
+}
+.component .page li:nth-child(10) {
+  -webkit-transform: rotateY(-36deg);
+  -moz-transform: rotateY(-36deg);
+  transform: rotateY(-36deg);
+}
+.component .page li:nth-child(11) {
+  -webkit-transform: rotateY(-36deg);
+  -moz-transform: rotateY(-36deg);
+  transform: rotateY(-36deg);
+}
+.component .hardcover_front,
+.component .hardcover_back,
+.component .book_spine,
+.component .hardcover_front li,
+.component .hardcover_back li,
+.component .book_spine li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.component .hardcover_front,
+.component .hardcover_back {
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+.component .hardcover_front {
+  -webkit-transition: all 0.5s ease, z-index 0.6s;
+  -moz-transition: all 0.5s ease, z-index 0.6s;
+  transition: all 1s ease, z-index 0.6s;
+}
+.component .hardcover_front li:first-child {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-transform: translateZ(2px);
+  -moz-transform: translateZ(2px);
+  transform: translateZ(2px);
+}
+.component .hardcover_front li:last-child {
+  -webkit-transform: rotateY(180deg) translateZ(2px);
+  -moz-transform: rotateY(180deg) translateZ(2px);
+  transform: rotateY(180deg) translateZ(2px);
+}
+.component .hardcover_back li:first-child {
+  -webkit-transform: translateZ(2px);
+  -moz-transform: translateZ(2px);
+  transform: translateZ(2px);
+}
+.component .hardcover_back li:last-child {
+  -webkit-transform: translateZ(-2px);
+  -moz-transform: translateZ(-2px);
+  transform: translateZ(-2px);
+}
+.component .hardcover_front li:first-child:after,
+.component .hardcover_front li:first-child:before,
+.component .hardcover_front li:last-child:after,
+.component .hardcover_front li:last-child:before,
+.component .hardcover_back li:first-child:after,
+.component .hardcover_back li:first-child:before,
+.component .hardcover_back li:last-child:after,
+.component .hardcover_back li:last-child:before,
+.component .book_spine li:first-child:after,
+.component .book_spine li:first-child:before,
+.component .book_spine li:last-child:after,
+.component .book_spine li:last-child:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.component .hardcover_front li:first-child:after,
+.component .hardcover_front li:first-child:before {
+  width: 4px;
+  height: 100%;
+}
+.component .hardcover_front li:first-child:after {
+  -webkit-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+  -moz-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+  transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+}
+.component .hardcover_front li:first-child:before {
+  -webkit-transform: rotateY(90deg) translateZ(158px) translateX(2px);
+  -moz-transform: rotateY(90deg) translateZ(158px) translateX(2px);
+  transform: rotateY(90deg) translateZ(158px) translateX(2px);
+}
+.component .hardcover_front li:last-child:after,
+.component .hardcover_front li:last-child:before {
+  width: 4px;
+  height: 160px;
+}
+.component .hardcover_front li:last-child:after {
+  -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(-2px) translateY(-78px);
+  -moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(-2px) translateY(-78px);
+  transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(-2px) translateY(-78px);
+}
+.component .hardcover_front li:last-child:before {
+  box-shadow: 0px 0px 30px 5px #333;
+  -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
+  -moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
+  transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
+}
+.component .hardcover_back li:first-child:after,
+.component .hardcover_back li:first-child:before {
+  width: 4px;
+  height: 100%;
+}
+.component .hardcover_back li:first-child:after {
+  -webkit-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+  -moz-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+  transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+}
+.component .hardcover_back li:first-child:before {
+  -webkit-transform: rotateY(90deg) translateZ(158px) translateX(2px);
+  -moz-transform: rotateY(90deg) translateZ(158px) translateX(2px);
+  transform: rotateY(90deg) translateZ(158px) translateX(2px);
+}
+.component .hardcover_back li:last-child:after,
+.component .hardcover_back li:last-child:before {
+  width: 4px;
+  height: 160px;
+}
+.component .hardcover_back li:last-child:after {
+  -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(2px) translateY(-78px);
+  -moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(2px) translateY(-78px);
+  transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(2px) translateY(-78px);
+}
+.component .hardcover_back li:last-child:before {
+  box-shadow: 10px -1px 80px 20px #666;
+  -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
+  -moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
+  transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
+}
+.component .book_spine {
+  -webkit-transform: rotateY(60deg) translateX(-5px) translateZ(-12px);
+  -moz-transform: rotateY(60deg) translateX(-5px) translateZ(-12px);
+  transform: rotateY(60deg) translateX(-5px) translateZ(-12px);
+  width: 16px;
+  z-index: 0;
+}
+.component .book_spine li:first-child {
+  -webkit-transform: translateZ(2px);
+  -moz-transform: translateZ(2px);
+  transform: translateZ(2px);
+}
+.component .book_spine li:last-child {
+  -webkit-transform: translateZ(-2px);
+  -moz-transform: translateZ(-2px);
+  transform: translateZ(-2px);
+}
+.component .book_spine li:first-child:after,
+.component .book_spine li:first-child:before {
+  width: 4px;
+  height: 100%;
+}
+.component .book_spine li:first-child:after {
+  -webkit-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+  -moz-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+  transform: rotateY(90deg) translateZ(-2px) translateX(2px);
+}
+.component .book_spine li:first-child:before {
+  -webkit-transform: rotateY(-90deg) translateZ(-12px);
+  -moz-transform: rotateY(-90deg) translateZ(-12px);
+  transform: rotateY(-90deg) translateZ(-12px);
+}
+.component .book_spine li:last-child:after,
+.component .book_spine li:last-child:before {
+  width: 4px;
+  height: 16px;
+}
+.component .book_spine li:last-child:after {
+  -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(8px) translateX(2px) translateY(-6px);
+  -moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(8px) translateX(2px) translateY(-6px);
+  transform: rotateX(90deg) rotateZ(90deg) translateZ(8px) translateX(2px) translateY(-6px);
+}
+.component .book_spine li:last-child:before {
+  box-shadow: 5px -1px 100px 40px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
+  -moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
+  transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
+}
+.component .page,
+.component .page > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.component .page {
+  width: 100%;
+  height: 98%;
+  top: 1%;
+  left: 3%;
+  z-index: 10;
+}
+.component .page > li {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.component .page > li:nth-child(2) {
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+.component .page > li:nth-child(3) {
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.component .page > li:nth-child(4) {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.component .page > li:nth-child(5) {
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+.component .page > li:nth-child(6) {
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  transition-duration: 0.7s;
+}
+.component .stage {
+  transition: 1s;
+  transform: translateX(70px);
+}
+.component .open .hardcover_front {
+  -webkit-transform: rotateY(-182deg) translateZ(0);
+  -moz-transform: rotateY(-182deg) translateZ(0);
+  transform: rotateY(-182deg) translateZ(0);
+  z-index: 0;
+}
+.component .book .open li:nth-child(1) {
+  -webkit-transform: rotateY(-30deg);
+  -moz-transform: rotateY(-30deg);
+  transform: rotateY(-30deg);
+  -webkit-transition-duration: 3.2s;
+  -moz-transition-duration: 3.2s;
+  transition-duration: 3.2s;
+}
+.component .book .open li:nth-child(2) {
+  -webkit-transform: rotateY(-35deg);
+  -moz-transform: rotateY(-35deg);
+  transform: rotateY(-35deg);
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  transition-duration: 3s;
+}
+.component .book .open li:nth-child(3) {
+  -webkit-transform: rotateY(-118deg);
+  -moz-transform: rotateY(-118deg);
+  transform: rotateY(-118deg);
+  -webkit-transition-duration: 2.8s;
+  -moz-transition-duration: 2.8s;
+  transition-duration: 2.8s;
+}
+.component .book .open li:nth-child(4) {
+  -webkit-transform: rotateY(-123deg);
+  -moz-transform: rotateY(-123deg);
+  transform: rotateY(-123deg);
+  -webkit-transition-duration: 2.6s;
+  -moz-transition-duration: 2.6s;
+  transition-duration: 2.6s;
+}
+.component .book .open li:nth-child(5) {
+  -webkit-transform: rotateY(-128deg);
+  -moz-transform: rotateY(-128deg);
+  transform: rotateY(-128deg);
+  -webkit-transition-duration: 2.4s;
+  -moz-transition-duration: 2.4s;
+  transition-duration: 2.4s;
+}
+.component .book .open li:nth-child(6) {
+  -webkit-transform: rotateY(-133deg);
+  -moz-transform: rotateY(-133deg);
+  transform: rotateY(-133deg);
+  -webkit-transition-duration: 2.2s;
+  -moz-transition-duration: 2.2s;
+  transition-duration: 2.2s;
+}
+.component .book .open li:nth-child(7) {
+  -webkit-transform: rotateY(-138deg);
+  -moz-transform: rotateY(-138deg);
+  transform: rotateY(-138deg);
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  transition-duration: 2s;
+}
+.component .book .open li:nth-child(8) {
+  -webkit-transform: rotateY(-142deg);
+  -moz-transform: rotateY(-142deg);
+  transform: rotateY(-142deg);
+  -webkit-transition-duration: 1.8s;
+  -moz-transition-duration: 1.8s;
+  transition-duration: 1.8s;
+}
+.component .book .open li:nth-child(9) {
+  -webkit-transform: rotateY(-148deg);
+  -moz-transform: rotateY(-148deg);
+  transform: rotateY(-148deg);
+  -webkit-transition-duration: 1.6s;
+  -moz-transition-duration: 1.6s;
+  transition-duration: 1.6s;
+}
+.component .book .open li:nth-child(10) {
+  -webkit-transform: rotateY(-152deg);
+  -moz-transform: rotateY(-152deg);
+  transform: rotateY(-152deg);
+  -webkit-transition-duration: 1.4s;
+  -moz-transition-duration: 1.4s;
+  transition-duration: 1.4s;
+}
+.component .book .open li:nth-child(11) {
+  -webkit-transform: rotateY(-158deg);
+  -moz-transform: rotateY(-158deg);
+  transform: rotateY(-158deg);
+  -webkit-transition-duration: 1.2s;
+  -moz-transition-duration: 1.2s;
+  transition-duration: 1.2s;
+}
+.component .coverDesign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.component .coverDesign::after {
+  background-image: url("http://www.iranhafez.com/img/25.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.component img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+}
+@media screen and (max-width: 37.8125em) {
+  .component .align > li {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .component figcaption {
+    text-align: center;
+    width: 320px;
+    top: 250px;
+    padding-left: 0;
+    left: -80px;
+    font-size: 90%;
+  }
+}
+
+.banner-center {
+  background-attachment: fixed;
+  background-image: linear-gradient(to right, #FE6A6E, #FF006A);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+  z-index: 10;
+}
+.popup .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup .section img {
+  border-radius: 65px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 80px 750px rgba(0, 0, 0, 0.58);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.invite {
+  transform: translateY(100%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(72, 139, 223, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  z-index: 10;
+  animation: invite 1s ease-in-out forwards;
+}
+@keyframes invite {
+  to {
+    transform: translateY(0);
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=globals.css.map */

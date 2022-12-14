@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Pinar-VF";
+    src: url("../../next-yalda-app/styles/Pinar-V2/Statics/ttf/FD(Farsi Digits instead Latin)/Pinar-FD-Regular.ttf");
+}
+
+.font-pinar{
+    font-family: "Pinar-VF", serif !important;
+}
+.Toastify *{
+    font-family: "Pinar-VF", serif !important;
+}
