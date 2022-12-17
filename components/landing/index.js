@@ -1,9 +1,12 @@
 import React from 'react';
 import Book from "../book/book";
+import OtpCode from "../form/otpCode";
+import UsernamePassword from "../form/username&password";
+import {useSelector} from "react-redux";
 
 function Index({setStatusPopup}) {
 
-
+    const {request} = useSelector(state => state)
 
     return (
         <>
@@ -26,29 +29,10 @@ function Index({setStatusPopup}) {
                     <img src="img/barf.png" className="img-hendevaneh img4 d-none d-lg-block" alt=""/>
                     <Book setStatusPopup={setStatusPopup}/>
                 </div>
-                <div className="col-12 flex-wrap col-md-6 p-3 py-5  d-flex justify-content-center">
-                    <img src="img/hendevaneh.png" className="img-hendevaneh img1  col-2 " alt=""/>
-                    <h3 dir="rtl" className="text-center d-flex justify-content-center align-content-between flex-wrap" ><span className="d-flex justify-content-center align-items-center col-12 py-2 text-light fw-bold">برای اینکه بتونی فال بگیری</span>  <span className="d-flex justify-content-center align-items-center col-12 py-2 text-light fw-bold">اطلاعاتت رو وارد کن!</span></h3>
+                {
+                    request.status ? <OtpCode />  : <UsernamePassword />
+                }
 
-                    <form dir="rtl"
-                          className="col-12 p-2  rounded d-flex justify-content-center align-content-between flex-wrap">
-                        <label className="col-12 d-flex justify-content-center align-items-center my-2">
-                            <input type="text" name="fullName" id="fullName"
-                                   className="border shadow-sm col-11 col-xl-5 rounded p-2 bg-light fw-bold"
-                                   placeholder="نام و نام خانوادگی"/>
-                        </label>
-                        <label className="col-12 d-flex justify-content-center align-items-center my-2">
-                            <input type="text" name="phone" id="phone"
-                                   className="border shadow-sm col-11 col-xl-5 rounded p-2 bg-light fw-bold"
-                                   placeholder=" شماره تلفن همراه  "/>
-                        </label>
-                        <img src="img/barf.png" className="img-hendevaneh img4 d-none d-lg-block" alt=""/>
-                        <div className="col-12 d-flex justify-content-center align-items-center mt-3">
-                            <button className="border-0 rounded p-2 px-5 btn-accept text-light col-11 col-xl-5  fw-bold  shadow">ثبت
-                            </button>
-                        </div>
-                    </form>
-                </div>
             </section>
             <section className="col-12 p-xl-3 py-3 p-2 my-5 banner-center d-flex  justify-content-center align-items-center">
                 <h2 dir="rtl" className="d-none d-xl-flex m-0 p-0 text-light"><a href="https://elanza.com" target="_blank" className="text-decoration-none text-white fw-bold">تخفیف های یلدایی الانزا</a></h2>

@@ -1,6 +1,6 @@
 @import "font.css";
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 @import "bootstrap.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 html, body {
   background-image: linear-gradient(to bottom, #141c53, #333e8a);
 }
@@ -864,6 +864,18 @@ img {
     transform: translateY(0);
     top: 0;
   }
+}
+
+.filter-disabled {
+  filter: grayscale(1);
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.font-9-rem {
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=globals.css.map */

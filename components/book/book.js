@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
+import {useSelector} from "react-redux";
 
 function Book({setStatusPopup}) {
     const [classStatus , setClassStatus] = useState()
 
-
+    const {verify} = useSelector(state => state)
     const getFal = () =>{
         setClassStatus('open')
         setTimeout(()=>{
@@ -84,7 +85,7 @@ function Book({setStatusPopup}) {
                     </li>
                 </ul>
                <div className="col-12 d-flex justify-content-center align-items-center">
-                   <button onClick={getFal} className="col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light">فال بگیر</button>
+                   <button onClick={getFal} className={verify?.status ? 'col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light' : "col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light filter-disabled" } disabled={verify?.status ? "" : 'no'} title={verify?.status ? "" : "ابتدا ثبتام کنید"} >فال بگیر</button>
                </div>
             </div>
         </>

@@ -23,6 +23,7 @@ export default function Home() {
         {
             statusPopup ?   <Popup setStatusInvite={setStatusInvite} setStatusPopup={setStatusPopup} />  : ''
         }
+        <Popup setStatusInvite={setStatusInvite} setStatusPopup={setStatusPopup} />
         {
             statusInvite ?   <Invite setStatusInvite={setStatusInvite} />  : ''
         }
