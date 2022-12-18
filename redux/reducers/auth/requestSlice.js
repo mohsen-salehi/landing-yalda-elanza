@@ -13,7 +13,7 @@ const requestSuccess = (state = initialState, action) => {
 
 const requestFailed = (state = initialState) => {
     state.status = false
-    state.data = []
+    state.data = null
 }
 
 const requestSlice = createSlice({

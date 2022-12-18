@@ -37,7 +37,6 @@ function Book({setStatusPopup}) {
                                 <li></li>
                             </ul>
 
-
                             <ul className={classStatus ? 'open page' : "page"}>
                                 <li>
                                     <img src="img/fal1.png" alt=""/>
@@ -90,9 +89,9 @@ function Book({setStatusPopup}) {
                <div className="col-12 d-flex justify-content-center align-items-center">
                    {
                        request.data ?
-                           <button onClick={getFal}  disabled={request?.status ? "" : 'no'} className={'col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light'}   >فال بگیر</button>
+                           <button onClick={getFal}  disabled={request?.status ? "" : 'no'} className={'col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light fw-bold  z-index-2 h5'}   >فال بگیر</button>
                            :
-                           <button onClick={getFal} className={verify?.status ? 'col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light' : "col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light filter-disabled" } disabled={verify?.status ? "" : 'no'} title={verify?.status ? "" : "ابتدا ثبت نام کنید"} >فال بگیر</button>
+                           <button onClick={getFal} className={verify?.status ? 'col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light fw-bold z-index-2 h5' : "col-9 col-xl-3 btn-accept border-0 rounded fw-bold p-2 text-light z-index-2 filter-disabled h5" } disabled={verify?.status ? "" : 'no'} title={verify?.status ? "" : "ابتدا ثبت نام کنید"} >فال بگیر</button>
                    }
 
                </div>

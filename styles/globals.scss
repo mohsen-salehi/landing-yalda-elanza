@@ -1,7 +1,9 @@
 @import "font.css";
 @import "bootstrap.css";
-html, body{
-    background-image: linear-gradient(to bottom ,#141c53 ,#333e8a );
+
+
+body,html,main{
+    scroll-behavior: smooth !important;
 }
 
 input, select{
@@ -19,6 +21,7 @@ img{
 }
 
 .main{
+    background-image: linear-gradient(to bottom ,#141c53 ,#333e8a );
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -49,7 +52,7 @@ img{
 
 @media (max-width: 767px) {
     .font-mobile{
-        font-size: 0.4rem !important;
+        font-size: 0.45rem !important;
     }
 
     .top-section{
@@ -59,7 +62,7 @@ img{
         background-size: 100% , 100%;
         background-position: top;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        //background-attachment: fixed;
         z-index: 2;
     }
     .img1{
@@ -297,7 +300,7 @@ img{
         -webkit-perspective: 1000px;
         -moz-perspective: 1000px;
         perspective: 1000px;
-        transform: translateY(-70%) scale(2);
+        transform: translateY(-70%) scale(1.5);
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         transform-style: preserve-3d;
@@ -314,7 +317,18 @@ img{
         background-attachment: fixed;
         z-index: 2;
     }
-
+    .book {
+        position: relative;
+        width: 160px;
+        height: 220px;
+        -webkit-perspective: 1000px;
+        -moz-perspective: 1000px;
+        perspective: 1000px;
+        transform: translateY(-70%) scale(2);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
 }
 
 .component{
@@ -1004,4 +1018,94 @@ img{
 
 .z-index-2 {
     z-index: 2;
+}
+
+.loading{
+    $opacity: .4;
+    $y: -100%;
+    $y2: 22%;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+    .content {
+        align-items: center;
+        background: rgba(33, 76, 94, 0.31);
+        display:flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        padding: 4rem 20px;
+    }
+    .loading {
+        display: flex;
+        justify-content: space-between;
+        max-width: 72px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .dot {
+        animation: loading 1s cubic-bezier(.55,-0.77,.42,1.79) 0s infinite normal both running;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+        height: 1rem;
+        width: 1rem;
+
+        $n: 3;
+        @for $x from 2 through $n {
+            &:nth-child(#{$x}) {
+                animation-name: loading-#{$x};
+            }
+        }
+
+    }
+
+    @keyframes loading {
+        0%   {
+            transform: translateY(0);
+        }
+        4%   {
+            transform: translateY($y2);
+        }
+        25% {
+            transform: translateY($y);
+        }
+        50%  {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes loading-2 {
+        25%   {
+            transform: translateY(0);
+        }
+        29%   {
+            transform: translateY($y2);
+        }
+        50%  {
+            transform: translateY($y);
+        }
+        75% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes loading-3 {
+        50%  {
+            transform: translateY(0);
+        }
+        54%   {
+            transform: translateY($y2);
+        }
+        75% {
+            transform: translateY($y);
+        }
+        100%  {
+            transform: translateY(0);
+        }
+    }
 }
