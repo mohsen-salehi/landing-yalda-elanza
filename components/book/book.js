@@ -92,7 +92,7 @@ function Book({setStatusPopup}) {
                        request.data ?
                            <button onClick={getFal}  disabled={request?.status ? "" : 'no'} className={'col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light'}   >فال بگیر</button>
                            :
-                           <button onClick={getFal} className={verify?.status ? 'col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light' : "col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light filter-disabled" } disabled={verify?.status ? "" : 'no'} title={verify?.status ? "" : "ابتدا ثبتام کنید"} >فال بگیر</button>
+                           <button onClick={getFal} className={verify?.status ? 'col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light' : "col-9 col-xl-3 btn-accept border-0 rounded p-2 text-light filter-disabled" } disabled={verify?.status ? "" : 'no'} title={verify?.status ? "" : "ابتدا ثبت نام کنید"} >فال بگیر</button>
                    }
 
                </div>
