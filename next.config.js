@@ -3,4 +3,15 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig,
+  redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/yalda',
+        permanent: true,
+      }
+    ]
+  }
+}

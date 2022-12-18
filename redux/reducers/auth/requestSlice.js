@@ -2,7 +2,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     status: false,
-    data: []
+    data: null
 }
 
 const requestSuccess = (state = initialState, action) => {

@@ -7,6 +7,7 @@ import {useSelector} from "react-redux";
 function Index({setStatusPopup}) {
 
     const {request} = useSelector(state => state)
+    const {verify} = useSelector(state => state)
 
     return (
         <>
@@ -29,8 +30,17 @@ function Index({setStatusPopup}) {
                     <img src="img/barf.png" className="img-hendevaneh img4 d-none d-lg-block" alt=""/>
                     <Book setStatusPopup={setStatusPopup}/>
                 </div>
+
                 {
-                    request.status ? <OtpCode />  : <UsernamePassword />
+                    request.data ? (
+                            request.data && ''
+                    ) : (
+                        request.status  ?
+                            (
+                              verify.status ?  '' :   <OtpCode />
+                            )
+                            : <UsernamePassword />
+                    )
                 }
 
             </section>

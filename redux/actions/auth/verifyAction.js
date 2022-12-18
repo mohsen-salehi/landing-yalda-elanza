@@ -14,6 +14,7 @@ const verifyAction = (userData) => async dispatch => {
             dispatch(verifySuccess(data))
             toast.success(data?.data?.message)
         } catch (e) {
+            toast.error('کد وارد شده اشتباه است')
             dispatch(verifyFailed())
         }
     }

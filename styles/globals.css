@@ -47,6 +47,9 @@ img {
 }
 
 @media (max-width: 767px) {
+  .font-mobile {
+    font-size: 0.4rem !important;
+  }
   .top-section {
     width: 100%;
     height: 30%;
@@ -146,6 +149,9 @@ img {
   }
 }
 @media (min-width: 768px) {
+  .font-mobile {
+    font-size: 0.5rem !important;
+  }
   .top-section {
     width: 100%;
     height: 50vh;
@@ -254,6 +260,9 @@ img {
   }
 }
 @media (min-width: 1025px) {
+  .font-mobile {
+    font-size: 0.7rem !important;
+  }
   .book {
     position: relative;
     width: 160px;
@@ -840,7 +849,9 @@ img {
   align-items: center;
 }
 .popup .section img {
-  border-radius: 65px;
+  border-radius: 25px;
+  background: white;
+  overflow: hidden;
   padding: 0;
   margin: 0;
   box-shadow: 0 0 80px 750px rgba(0, 0, 0, 0.58);
@@ -872,10 +883,6 @@ img {
 
 .z-index-2 {
   z-index: 2;
-}
-
-.font-9-rem {
-  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=globals.css.map */
