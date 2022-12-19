@@ -17,7 +17,6 @@ export default function Home() {
     return (<div className="position-relative">
         <Head>
             <title>هم فاله،هم هدیه | جشنواره‌ یلدای الانزا</title>
-            <meta name="description" content="هم فاله،هم هدیه | یلدای الانزا"/>
             <meta name="theme-color" content="#FF304E"/>
             <meta property="og:image" itemProp="image" content="https://elanza.com/assets/global/favicon/og_image.png"/>
             <link rel='canonical' href='https://landing.elanza.com/yalda'/>
