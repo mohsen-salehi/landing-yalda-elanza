@@ -39,37 +39,37 @@ function Book({setStatusPopup}) {
 
                             <ul className={classStatus ? 'open page' : "page"}>
                                 <li>
-                                    <img src="img/fal1.png" alt=""/>
+                                    <img loading='lazy' src="img/fal1.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal2.png" alt=""/>
+                                    <img loading='lazy' src="img/fal2.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal3.png" alt=""/>
+                                    <img loading='lazy' src="img/fal3.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal4.png" alt=""/>
+                                    <img loading='lazy' src="img/fal4.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal5.png" alt=""/>
+                                    <img loading='lazy' src="img/fal5.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal6.png" alt=""/>
+                                    <img loading='lazy' src="img/fal6.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal7.png" alt=""/>
+                                    <img loading='lazy' src="img/fal7.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal8.png" alt=""/>
+                                    <img loading='lazy' src="img/fal8.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal9.png" alt=""/>
+                                    <img loading='lazy' src="img/fal9.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal10.png" alt=""/>
+                                    <img loading='lazy' src="img/fal10.png" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="img/fal11.png" alt=""/>
+                                    <img loading='lazy' src="img/fal11.png" alt=""/>
                                 </li>
                             </ul>
 
