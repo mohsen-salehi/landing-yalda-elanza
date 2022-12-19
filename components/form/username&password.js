@@ -29,9 +29,9 @@ function UsernamePassword() {
     return (
         <div className="col-12 flex-wrap col-md-6 p-3 py-5  d-flex justify-content-center">
             <img src="img/hendevaneh.png" className="img-hendevaneh img1  col-2 " alt=""/>
-            <h1 dir="rtl" className="text-center d-flex justify-content-center align-content-between flex-wrap" >
+            <h2 dir="rtl" className="text-center d-flex justify-content-center align-content-between flex-wrap" >
                 <span className="d-flex justify-content-center align-items-center col-12 py-2 text-light fw-bold">برای اینکه بتونی فال بگیری</span>  <span className="d-flex justify-content-center align-items-center col-12 py-2 text-light fw-bold">اطلاعاتت رو وارد کن!</span>
-            </h1>
+            </h2>
             <form onSubmit={formHandler} dir="rtl"
                   className="col-12 p-2  rounded d-flex justify-content-center align-content-between flex-wrap">
                 <label className="col-12 d-flex justify-content-center align-items-center my-2">

@@ -16,7 +16,7 @@ export default function Home() {
     const {loading} = useSelector(state => state.loading)
     return (<div className="position-relative">
         <Head>
-            <title>هم فاله،هم هدیه | جشنواره‌یلدای الانزا</title>
+            <title>هم فاله،هم هدیه | جشنواره‌ یلدای الانزا</title>
             <meta name="description" content="هم فاله،هم هدیه | یلدای الانزا"/>
             <meta name="theme-color" content="#FF304E"/>
             <meta property="og:image" itemProp="image" content="https://elanza.com/assets/global/favicon/og_image.png"/>
