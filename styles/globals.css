@@ -1,6 +1,6 @@
 @import "font.css";
 @import "bootstrap.css";
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("styles/font/bootstrap-icons.css");
 html, body {
   background-image: linear-gradient(to bottom, #141c53, #333e8a);
 }
