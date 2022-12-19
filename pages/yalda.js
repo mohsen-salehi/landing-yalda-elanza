@@ -20,7 +20,7 @@ export default function Home() {
             <meta name="description" content="هم فاله،هم هدیه | یلدای الانزا"/>
             <meta name="theme-color" content="#FF304E"/>
             <meta property="og:image" itemProp="image" content="https://elanza.com/assets/global/favicon/og_image.png"/>
-            <link rel='canonical' href='https://landing.elanza.com'/>
+            <link rel='canonical' href='https://landing.elanza.com/yalda'/>
             <link rel="apple-touch-icon" sizes="57x57"
                   href="https://elanza.com/assets/global/favicon/apple-icon-57x57.png"/>
             <link rel="apple-touch-icon" sizes="60x60"
