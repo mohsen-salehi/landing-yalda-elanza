@@ -18,13 +18,13 @@ function Index({setStatusPopup, setStatusInvite}) {
                 <img src={`/img/fal${number}.png`} className=" overflow-hidden" alt=""/>
 
 
-                <div className="col-12 d-flex justify-content-center align-items-center flex-wrap position-absolute bottom-0  mb-0 mb-lg-3 font-mobile">
+                <div className="col-12 d-flex justify-content-center align-items-center flex-wrap position-absolute bottom-0  mb-0 mb-xl-3 font-mobile">
 
                     {
                         request.data ? (
                             request.data && (
                                 request?.data?.vouchers_by_tag?.map((item , index) => (
-                                    <div key={index} className="col-11 d-flex justify-content-between align-items-center p-1 bg-white p-lg-2 mt-1 shadow-sm rounded-pill">
+                                    <div key={index} className="col-11 d-flex justify-content-between align-items-center p-1 bg-white p-xl-2 mt-1 shadow-sm rounded-pill">
                                         <button className="col-2 btn btn-danger rounded-pill text-white fw-bold py-2 font-mobile" onClick={(e) => {
                                             navigator?.clipboard?.writeText(JSON.parse(item?.voucher.info)?.code)
                                             toast.success('کد تخفیف شما کپی شد')

@@ -1,4 +1,5 @@
 import '../styles/globals.scss'
+import "bootstrap-icons/font/bootstrap-icons.css"
 import {Provider} from "react-redux";
 import store from "../store";
 

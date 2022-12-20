@@ -1,7 +1,6 @@
 @import "font.css";
 @import "bootstrap.css";
 
-
 body,html,main{
     scroll-behavior: smooth !important;
 }
@@ -291,7 +290,7 @@ img{
 }
 @media (min-width: 1025px) {
     .font-mobile{
-        font-size: 0.7rem !important;
+        font-size: 0.4rem !important;
     }
     .book {
         position: relative;
@@ -306,7 +305,10 @@ img{
         transform-style: preserve-3d;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
+    .font-mobile{
+        font-size: 0.7rem !important;
+    }
     .top-section{
         width: 100%;
         height: 70vh;

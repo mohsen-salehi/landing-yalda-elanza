@@ -55,13 +55,13 @@ export default function Home() {
             <meta name='title' content='هم فاله، هم هدیه | جشنواره یلدا الانزا'/>
             <meta name='description' content='محصولات آرایشی بهداشتی با تخفیف های هیجان انگیز از 26 الی 30 آذر ماه 1401 در جشنواره یلدا الانزا'/>
         </Head>
-        <link rel="stylesheet" href="styles/font/bootstrap-icons.css"/>
         <main className='container-fluid font-pinar p-0 m-0 vh-100 main'>
             <Landing setStatusInvite={setStatusInvite} setStatusPopup={setStatusPopup}/>
         </main>
         {statusPopup ? <Popup setStatusInvite={setStatusInvite} setStatusPopup={setStatusPopup}/> : ''}
 
         {statusInvite ? <Invite setStatusInvite={setStatusInvite}/> : ''}
+
         <Alertify/>
         {loading ? <LoadingComponent/> : ''}
 
