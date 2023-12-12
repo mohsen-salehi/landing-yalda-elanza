@@ -11,7 +11,7 @@ function OtpCode() {
     const formHandler = (e) => {
         e.preventDefault()
         if (code.current?.value.length === 5 ) {
-            dispatch(verifyAction({token : code.current?.value , full_name : fullName , mobile }))
+            dispatch(verifyAction({token : code.current?.value , full_name : fullName , contact : mobile }))
         }else {
             toast.error(`
                 کد باید 5 رقم باشد

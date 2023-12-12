@@ -15,7 +15,7 @@ const requestAction = (userData) => async dispatch => {
             let data = await getServerSideProps(userData);
             dispatch(requestSuccess(data))
             dispatch(hideLoading())
-            toast.success(data?.data?.message)
+            toast.success(data?.data?.messages[0])
         } catch (e) {
             dispatch(requestFailed())
             dispatch(hideLoading())

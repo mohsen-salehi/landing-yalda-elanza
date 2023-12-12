@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import Landing from "../components/landing";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Popup from "../components/popup";
 import Invite from "../components/invite";
 import Alertify from "../components/alertify";
@@ -53,7 +53,8 @@ export default function Home() {
             <meta name="robots" content="index, follow"/>
             <meta name="application-TileImage" content="https://elanza.com/assets/global/favicon/ms-icon-144x144.png"/>
             <meta name='title' content='هم فاله، هم هدیه | جشنواره یلدا الانزا'/>
-            <meta name='description' content='محصولات آرایشی بهداشتی با تخفیف های هیجان انگیز از 26 الی 30 آذر ماه 1401 در جشنواره یلدا الانزا'/>
+            <meta name='description'
+                  content='محصولات آرایشی بهداشتی با تخفیف های هیجان انگیز از 26 الی 30 آذر ماه 1401 در جشنواره یلدا الانزا'/>
         </Head>
         <main className='container-fluid font-pinar p-0 m-0 vh-100 main'>
             <Landing setStatusInvite={setStatusInvite} setStatusPopup={setStatusPopup}/>

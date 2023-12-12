@@ -16,7 +16,7 @@ function UsernamePassword() {
                 fullName : fullName.current?.value,
                 mobile : phoneNumber.current?.value
             }))
-            dispatch(requestAction({mobile : phoneNumber.current?.value}))
+            dispatch(requestAction({contact : phoneNumber.current?.value}))
         }else {
             toast.error(`
             فیلد نام و نام خانوادگی خالی نباشد و

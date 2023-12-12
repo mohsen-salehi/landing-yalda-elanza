@@ -7,10 +7,12 @@ const initialState = {
 
 const requestSuccess = (state = initialState, action) => {
     let payload = action.payload.data
-    state.status = true
+    state.status = "OTP"
     state.data = payload.data
 }
-
+const requestOTP = (state = initialState) => {
+    state.status = true
+}
 const requestFailed = (state = initialState) => {
     state.status = false
     state.data = null
@@ -18,7 +20,7 @@ const requestFailed = (state = initialState) => {
 
 const requestSlice = createSlice({
     name: "request", initialState, reducers: {
-        requestSuccess, requestFailed
+        requestSuccess, requestFailed , requestOTP
     }
 })
 

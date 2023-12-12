@@ -8,7 +8,7 @@ function Index(){
     return (
         <div>
             <ToastContainer
-                position="bottom-right"
+                position="top-right"
                 autoClose={5000}
                 hideProgressBar={false}
                 newestOnTop={false}
@@ -16,6 +16,7 @@ function Index(){
                 rtl={true}
                 pauseOnFocusLoss
                 draggable
+                style={{fontSize : "13px"}}
                 pauseOnHover
                 theme="dark"
             />

@@ -7,7 +7,6 @@ import {useSelector} from "react-redux";
 function Index({setStatusPopup}) {
 
     const {request} = useSelector(state => state)
-    const {verify} = useSelector(state => state)
 
     return (<>
             <section className="top-section d-flex justify-content-center align-items-center">
@@ -29,8 +28,15 @@ function Index({setStatusPopup}) {
                     <img src="img/barf.png" className="img-hendevaneh img4 d-none d-lg-block" alt=""/>
                     <Book setStatusPopup={setStatusPopup}/>
                 </div>
-                {request.data ? (request.data && '') : (request.status ? (verify.status ? '' : <OtpCode/>) :
-                    <UsernamePassword/>)}
+                {
+                    request.status === "OTP"
+                        ?
+                        <OtpCode/>
+                        : (
+                            !request?.status && <UsernamePassword/>
+                        )
+
+                }
 
             </section>
             <section
@@ -57,29 +63,29 @@ function Index({setStatusPopup}) {
 
                 <a href="https://elanza.com/brand/lafarrerr" target="_blank"
                    className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img  src="img/footer/6لافارر.png" className="img-fluid col-10" alt=""/>
+                    <img src="img/footer/6لافارر.png" className="img-fluid col-10" alt=""/>
                 </a>
                 <a href="https://elanza.com/category/electrical-care-tools" target="_blank"
                    className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img  src="img/footer/5برقی.png" className="img-fluid col-10" alt=""/>
+                    <img src="img/footer/5برقی.png" className="img-fluid col-10" alt=""/>
                 </a>
                 <a href="https://elanza.com/tag/yalda" target="_blank"
                    className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img  src="img/footer/4پکیج-یلدایی.png" className="img-fluid col-10" alt=""/>
+                    <img src="img/footer/4پکیج-یلدایی.png" className="img-fluid col-10" alt=""/>
                 </a>
                 <a href="https://elanza.com/brand/top-shop" target="_blank"
                    className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img  src="img/footer/3تاپ-شاپ.png" className="img-fluid col-10 " alt=""/>
+                    <img src="img/footer/3تاپ-شاپ.png" className="img-fluid col-10 " alt=""/>
                 </a>
                 <a href="https://elanza.com/brand/cerita" target="_blank"
                    className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img  src="img/footer/2سریتا.png" className="img-fluid col-10" alt=""/>
+                    <img src="img/footer/2سریتا.png" className="img-fluid col-10" alt=""/>
                 </a>
                 <a href="https://elanza.com/tag/less-than-100" target="_blank"
                    className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img  src="img/footer/1کمتر-از-صد.png" className="img-fluid col-10" alt=""/>
+                    <img src="img/footer/1کمتر-از-صد.png" className="img-fluid col-10" alt=""/>
                 </a>
-                <img  src="img/anar.png" className="img-hendevaneh img5 col-12 col-xl-3" alt=""/>
+                <img src="img/anar.png" className="img-hendevaneh img5 col-12 col-xl-3" alt=""/>
             </footer>
 
         </>
